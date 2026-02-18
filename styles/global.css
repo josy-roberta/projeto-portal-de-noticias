@@ -34,8 +34,24 @@ h1, h2, h3 {
   font: inherit /*Vai herdar a cor do Pai, no caso p body, para não colocar a cor que o navegador coloca automaticamente, apenas para auxiliar o trabalho*/
 }
 
+.container {
+  max-width: 1280px;
+  padding-inline: 32px;
+  margin-inline: auto;
+}
+
 body {
   font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
 }
+
+/* classe utilitária */
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
