@@ -16,17 +16,21 @@
       inset:0;
       top: 50%;/*para o degrade começar no meio*/
       background: linear-gradient(
-        180deg /*sentido do degrade*/
-        transparent 0% /*percentual de onde começa a tranparência*/
+        180deg, /*sentido do degrade*/
+        transparent 0%, /*percentual de onde começa a tranparência*/
         #020617 100% /*percentual de onde termina a tranparência*/
       );
-    }
+    } 
 
     figcaption {
       position: absolute; 
       bottom: 0;
 
       padding:24px;
+
+      &:has(.text-lg) { /*a figcaption que tem(:has) essa classe .text-lg recebe essas propriedades*/
+        padding:12px ;
+      }
 
       h2 {
         margin-top: 8px;
