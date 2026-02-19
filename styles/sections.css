@@ -7,7 +7,7 @@
 
   .card { /*é mesma coisa que fazer um .card::before, mas como está dentro da propria tag fica dessa outra forma*/
     border-radius: 4px; 
-    overflow: hidden; /*para esconder o que etá trasbordanfo na caixa*/
+    overflow: hidden; /*para esconder o que etá trasbordanfo na caixa, se estiver escrito uma legenda ele esconde*/
     position: relative;/*porque está relativo ao card*/
     
     &::before {
@@ -20,6 +20,17 @@
         transparent 0% /*percentual de onde começa a tranparência*/
         #020617 100% /*percentual de onde termina a tranparência*/
       );
+    }
+
+    figcaption {
+      position: absolute; 
+      bottom: 0;
+
+      padding:24px;
+
+      h2 {
+        margin-top: 8px;
+      }
 
     }
   }
