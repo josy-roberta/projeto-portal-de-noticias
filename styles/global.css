@@ -51,8 +51,16 @@ body {
 }
 
 main {
-  margin-top: 40px;
-  gap: 80px /*para dar espaço na parte de baixo*/
+  margin-block: 40px;
+  row-gap: 80px; /*para dar espaço na parte de baixo*/
+  column-gap: 32px;
+
+  grid-template-columns: 2fr 1.4fr;
+
+  grid-template-areas: 
+  "featured featured"
+  "weekly weekly"
+  "ai aside";
 }
 
 .content-tag {
