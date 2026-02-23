@@ -52,7 +52,7 @@ body {
 
 main {
   margin-top: 40px;
-  gap: 80px
+  gap: 80px /*para dar espaço na parte de baixo*/
 }
 
 .content-tag {
