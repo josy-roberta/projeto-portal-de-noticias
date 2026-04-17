@@ -1,4 +1,4 @@
-section header { /* toda section que tiver heaser dentro vai receber essa propriedades, indepentede da class */
+section header { /* toda section que tiver header dentro vai receber essa propriedades, indepentede da class */
   border-top: 1px solid var(--stroke-color);
   padding-block: 12px 24px;
   font: var(--text-span);
