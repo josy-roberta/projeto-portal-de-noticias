@@ -85,6 +85,8 @@ main {
     "weekly"
     "ai"
     "aside";
+
+    grid-template-columns: 1fr;
   }
   
   .container {
@@ -94,8 +96,6 @@ main {
   .content-tag {
     max-width: 20.5rem;
   }
-
-  
 }
 
 
